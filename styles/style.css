@@ -1,0 +1,295 @@
+/* Reset & Fonts */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+}
+
+nav h1 {
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero */
+#hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #e9f5f9;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.project,
+div {
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* makes it circular */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+/* Animation for Fade-in */
+.hero-content {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 2rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* Horizontal line styling */
+.divider {
+    border: none;
+    border-top: 2px solid #0077cc;
+    margin: 1.5rem auto;
+    width: 50%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 2rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .divider {
+        width: 70%;
+        /* Make line smaller for mobile */
+    }
+}
+
+/* About Section Styles */
+.about {
+    padding: 3rem 0;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* About content layout (side-by-side) */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    /* Space between the two sections */
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* Left side: About Text */
+.about-text {
+    width: 60%;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Right side: Social Media Icons (Circular & Centered) */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the icons vertically */
+    gap: 1.5rem;
+    /* Space between each icon */
+    position: relative;
+    top: 50%;
+    /* Align to center of the left text */
+    transform: translateY(-50%);
+    /* Vertically center */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Make the icons circular */
+    background-color: #0077cc;
+    /* Icon background color */
+    color: white;
+    /* Icon color */
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #005fa3;
+    /* Darker color on hover */
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .social-links {
+        width: 100%;
+    }
+
+    .social-links {
+        margin-top: 2rem;
+        top: initial;
+        /* Reset for mobile */
+        transform: initial;
+        /* Reset for mobile */
+    }
+}
