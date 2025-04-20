@@ -6,14 +6,21 @@
   <title>Vanshika | Portfolio</title>
   <link rel="stylesheet" href="styles\style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h1>Vanshika</h1>
+  <header class="main-header">
+    <div class="logo">Vanshika</div>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- Nav Items -->
+    <nav class="nav-links" id="navLinks">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -25,45 +32,47 @@
       </ul>
     </nav>
   </header>
-
-  <section id="hero" class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h2>Vanshika Gupta</h2>
-            <p class="keywords">Computer Engineer | IoT | Industry 4.0 | UI/UX Designer</p>
-            <hr class="divider">
-            <p>A Computer Engineer passionate about technology and innovation in smart manufacturing.</p>
-            <a href="#projects" class="cta-button">View My Work</a>
-        </div>
-          
-        <div class="hero-image">
-            <img src="images\Vanshika_Gupta.jpg" alt="Vanshika" />
-        </div>
+  
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="images\Vanshika_Gupta.jpg" alt="Vanshika">
+      </div>
+      <div class="hero-text">
+        <h2>Vanshika Gupta</h2>
+        <p class="keywords">Computer Engineer | IoT | Industry 4.0 | UI/UX Designer</p>
+        <hr class="divider">
+        <p>A Computer Engineer passionate about technology and innovation in smart manufacturing.</p>
+        <a href="#projects" class="cta-button">View My Work</a>
     </div>
-  </section>  
+    </div>
+  </section>
+  
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <!-- <div class="about-content"> -->
         <!-- Left side with text lines -->
         <div class="about-text">
-          <p>Hi, I’m Vanshika, a curious and adaptable Computer Engineer who loves to explore new technologies. </p>
+          <!-- <p>Hi, I’m Vanshika, a curious and adaptable Computer Engineer who loves to explore new technologies. </p> -->
           <!-- <p>I graduated in Computer Engineering, and throughout my academic and professional journey, I’ve been passionate about bridging the gap between technology and real-world applications, particularly in the fields of IoT and Industry 4.0.</p> -->
-          <p>My specialties include IoT-based solutions, Industry 4.0 applications, and UI/UX design. </p>
-          <p>I have experience working with Python, C++, React, and Flutter. I’m driven by the challenge of solving complex problems and improving processes through innovation.</p>
+          <!-- <p>My specialties include IoT-based solutions, Industry 4.0 applications, and UI/UX design. </p> -->
+          <!-- <p>I have experience working with Python, C++, React, and Flutter. I’m driven by the challenge of solving complex problems and improving processes through innovation.</p> -->
+          <p>Hi there, glad to see you here! I’m <strong>Vanshika</strong>, a Computer Engineer passionate about <strong>IoT</strong>, <strong>Industry 4.0</strong>, and <strong>UI/UX Design</strong>. I enjoy solving problems, designing user-centric interfaces, and bringing ideas to life through technology.</p>
+          <p>I love working at the intersection of innovation and design. My journey is driven by curiosity and collaboration. Let's build something awesome!</p>
           <p>Outside of work, I enjoy reading, exploring new cultures, and learning languages. Feel free to explore my projects, and don’t hesitate to reach out if you'd like to collaborate!</p>
         </div>
         
         <!-- Right side with social media links -->
-        <div class="social-links">
+        <div class="about-icons">
           <!-- <h3>Connect with me:</h3> -->
           <ul>
-            <a href="https://www.linkedin.com/in/vanshika-gupta01/" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/vanshika0111" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/vanshika0111" target="_blank" class="icon-circle"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vanshika-gupta01/" target="_blank" class="icon-circle"><i class="fab fa-linkedin-in"></i></a>
           </ul>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </section> 
   
@@ -127,5 +136,14 @@
     <p>© 2025 Vanshika. All rights reserved.</p>
   </footer>
 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
