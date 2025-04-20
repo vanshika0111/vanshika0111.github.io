@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles\style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -36,6 +38,7 @@
   <section class="hero-section">
     <div class="hero-content">
       <div class="hero-image">
+        <!-- <img src="images\VG.jpg" alt="Vanshika"> -->
         <img src="images\Vanshika_Gupta.jpg" alt="Vanshika">
       </div>
       <div class="hero-text">
@@ -75,47 +78,265 @@
       <!-- </div> -->
     </div>
   </section> 
+
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-industry skill-icon"></i>
+        <h3>Smart Manufacturing</h3>
+        <ul>
+          <li>Siemens PLC</li>
+          <li>Node-RED</li>
+        </ul>
+      </div>
   
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Flutter</li>
-      <li>MySQL</li>
-      <li>HTML, CSS, JS</li>
-      <li>Digital Twin, Smart Manufacturing</li>
-      <!-- Add more -->
-    </ul>
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-microchip skill-icon"></i>
+        <h3>Technologies</h3>
+        <ul>
+          <li>AI, ML, IoT</li>
+          <li>Digital Shadow</li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-cloud skill-icon"></i>
+        <h3>Cloud</h3>
+        <ul>
+          <li>AWS: VPC, ELB, Route 53, EC2, Lambda </li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-microcontroller skill-icon"></i>
+        <h3>IoT Hardware</h3>
+        <ul>
+          <li>Arduino, NodeMCU, Raspberry Pi</li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-code skill-icon"></i>
+        <h3>Languages</h3>
+        <ul>
+          <li>C, C++, Java, Python</li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-laptop-code skill-icon"></i>
+        <h3>Development</h3>
+        <ul>
+          <li>Android Java, Flutter, .NET</li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-server skill-icon"></i>
+        <h3>Backend</h3>
+        <ul>
+          <li>Firebase, NodeJS</li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-pencil-ruler skill-icon"></i>
+        <h3>Designing</h3>
+        <ul>
+          <li>Figma</li>
+        </ul>
+      </div>
+  
+      <div class="skill-category" data-aos="fade-up">
+        <i class="fas fa-users skill-icon"></i>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Teamwork</li>
+          <li>Collaboration</li>
+          <li>Problem-solving</li>
+        </ul>
+      </div>
+  
+    </div>
   </section>
-
-  <section id="projects">
+  
+  
+  <section id="projects" class="projects-section">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Face Recognition Website</h3>
-      <p>Python-based site using OpenCV and Flask.</p>
+    <div class="projects-container">
+  
+      <!-- Digital Shadow Project -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>Digital Shadow – Smart Manufacturing</h3>
+        <p><strong>Jan 2025 - Feb 2025</strong></p>
+        <p>Created a digital shadow of an assembly line with 10 PLCs for real-time remote visualization in a Cyber-Physical Lab.</p>
+        <div class="tech-stack">
+          <i class="fas fa-industry" title="Industry 4.0"></i>
+          <i class="fab fa-windows" title="Desktop App"></i>
+          <i class="fas fa-network-wired" title="Smart Manufacturing"></i>
+        </div>
+      </div>
+  
+      <!-- Parkito Project -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>Parkito – Smart Parking System (IoT)</h3>
+        <p><strong>Oct 2022 – Sep 2023</strong></p>
+        <p>Led a team to build a working IoT-based smart parking system using ESP32, Firebase, and Figma for app and UI design.</p>
+        <div class="tech-stack">
+          <i class="fas fa-car" title="Smart Parking"></i>
+          <i class="fab fa-figma" title="Figma"></i>
+          <i class="fas fa-microchip" title="ESP32"></i>
+          <i class="fas fa-database" title="Firebase"></i>
+          <i class="fab fa-android" title="Android App"></i>
+        </div>
+      </div>
+  
+      <!-- Desktop Assistant Project -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>Desktop Assistant – AI</h3>
+        <p><strong>Apr 2021 – May 2021</strong></p>
+        <p>Developed a speech-based AI assistant in Python that recognizes voice commands and performs actions using speech-to-text modules.</p>
+        <div class="tech-stack">
+          <i class="fab fa-python" title="Python"></i>
+          <i class="fas fa-microphone" title="Speech Recognition"></i>
+          <i class="fas fa-robot" title="AI Assistant"></i>
+        </div>
+      </div>
+  
     </div>
-    <div class="project">
-      <h3>MQTT-based Monitoring System</h3>
-      <p>Built with .NET, C#, and MySQL.</p>
-    </div>
-    <!-- Add more -->
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div>
-      <h3>Jr. Software Developer Intern – Samudra Technologies</h3>
-      <p>Worked on desktop apps, MQTT backend, mobile UI with Figma and Flutter.</p>
-    </div>
-    <!-- Add more -->
   </section>
   
-  <section id="education">
-    <h2>Education</h2>
-    <p>Computer Engineering – NAMTECH (Current)</p>
-    <!-- Add more if needed -->
+  <section id="experience" class="experience-section">
+    <h2>Experience</h2>
+  
+    <!-- Experience Item -->
+    <div class="experience-item">
+      <!-- Left: Text -->
+      <div class="experience-text">
+        <h3>Jr. Software Developer Intern</h3>
+        <p class="company">Samudra Technologies – Ahmedabad, India</p>
+        <p class="date">Dec 2023 – Apr 2024</p>
+        <ul>
+          <li>Developed desktop applications using .NET (C#)</li>
+          <li>Designed and built a mobile app prototype using Figma</li>
+          <li>Built mobile app using Flutter</li>
+          <li>Worked on backend using MySQL and MQTT</li>
+          <li>Developed server using .NET (C#) and NodeJS</li>
+          <li>Built a Windows Service for MQTT broker</li>
+        </ul>
+      </div>
+  
+      <!-- Right: Icons -->
+      <div class="experience-icons">
+        <i class="fab fa-windows" title=".NET"></i>
+        <i class="fab fa-figma" title="Figma"></i>
+        <i class="fab fa-android" title="Flutter"></i>
+        <i class="fas fa-database" title="MySQL"></i>
+        <i class="fas fa-network-wired" title="MQTT"></i>
+        <i class="fab fa-node-js" title="NodeJS"></i>
+      </div>
+    </div>
+  
+   <!-- Adhir Info -->
+  <div class="experience-item">
+    <!-- Left: Text -->
+    <div class="experience-text">
+      <h3>UI/UX Designer Intern</h3>
+      <p class="company">Adhir Info – Jamnagar, India</p>
+      <p class="date">Mar 2022 – Mar 2023</p>
+      <ul>
+        <li>Designed user-centered mobile application with intuitive navigation</li>
+        <li>Conducted user research and created personas, flows, wireframes</li>
+        <li>Developed and iterated on high-fidelity prototypes using Figma</li>
+        <li>Collaborated with developers for accurate design implementation</li>
+      </ul>
+    </div>
+
+    <!-- Right: Icons -->
+    <div class="experience-icons">
+      <i class="fas fa-mobile-alt" title="Mobile App Design"></i>
+      <i class="fas fa-users" title="User Research"></i>
+      <i class="fab fa-figma" title="Figma"></i>
+      <i class="fas fa-code" title="Developer Collaboration"></i>
+    </div>
+  </div>
   </section>
+  
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+  
+    <div class="education-timeline">
+  
+      <!-- iPMP -->
+      <div class="education-entry">
+        <div class="edu-left">
+          <h3>International Professional Masters Program (iPMP)</h3>
+          <p class="institute">NAMTECH & TUM Asia</p>
+          <p class="location">Gandhinagar, Gujarat, India</p>
+          <p class="date">Sep 2024 – Present</p>
+        </div>
+        <div class="edu-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+      </div>
+  
+      <!-- BE Computer Engineering -->
+      <div class="education-entry">
+        <div class="edu-left">
+          <h3>B.E. - Computer Engineering</h3>
+          <p class="institute">MBIT, Anand</p>
+          <p class="location">Anand, Gujarat, India</p>
+          <p class="date">Sep 2020 – Apr 2024 | CGPA: 9.58</p>
+        </div>
+        <div class="edu-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+      </div>
+  
+      <!-- Minor in IoT -->
+      <div class="education-entry">
+        <div class="edu-left">
+          <h3>Minor Degree - Internet of Things (IoT)</h3>
+          <p class="institute">MBIT, Anand</p>
+          <p class="location">Anand, Gujarat, India</p>
+          <p class="date">Sep 2021 – Apr 2023 | CGPA: 8.67</p>
+        </div>
+        <div class="edu-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+      </div>
+  
+      <!-- HSC -->
+      <div class="education-entry">
+        <div class="edu-left">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p class="institute">Kendriya Vidyalaya</p>
+          <p class="location">Anand, Gujarat, India</p>
+          <p class="date">Apr 2019 – Jul 2020 | 81%</p>
+        </div>
+        <div class="edu-icon">
+          <i class="fas fa-school"></i>
+        </div>
+      </div>
+  
+      <!-- SSC -->
+      <div class="education-entry">
+        <div class="edu-left">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p class="institute">Sri Sri Ravishankar Vidya Mandir</p>
+          <p class="location">Anand, Gujarat, India</p>
+          <p class="date">Apr 2017 – May 2018 | 86.6%</p>
+        </div>
+        <div class="edu-icon">
+          <i class="fas fa-book-reader"></i>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
   
   <section id="awards">
     <h2>Awards & Achievements</h2>
@@ -143,6 +364,16 @@
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+  </script>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- skills -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- projects -->
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>
