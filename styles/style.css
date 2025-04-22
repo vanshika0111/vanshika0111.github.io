@@ -72,30 +72,89 @@
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* dark semi-transparent background */
+    z-index: 998;
+    display: none;
+    /* hidden by default */
+}
+
+/* Show overlay when nav is open */
+.nav-links.active~.overlay {
+    display: block;
+}
+
+/* Prevent body from scrolling when menu is open */
+body.nav-open {
+    overflow: hidden;
+}
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #0a192f;
-        width: 100%;
-        height: 100vh;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        display: none;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        /* Hide off-screen initially */
+        width: 150px;
+        /* height: 100vh; */
+        background-color: white;
+        padding: 1.5rem;
+        /* transition: right 0.3s ease-in-out; */
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        border-radius: 0 0 10px 10px;
+        opacity: 0;
+        pointer-events: none;
+        transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 
     .nav-links.active {
-        display: flex;
+        /* display: flex; */
+        right: 0;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .nav-links ul {
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
+
+    .nav-links ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active ul li {
+        animation: fadeInUp 0.4s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 
     .hamburger {
         display: flex;

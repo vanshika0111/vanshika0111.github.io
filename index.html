@@ -33,8 +33,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="overlay" id="overlay"></div>
   </header>
-  
+
   <section class="hero-section">
     <div class="hero-content">
       <div class="hero-image">
@@ -380,22 +381,34 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
+    const overlay = document.querySelector('.overlay');
   
-    // Toggle nav menu and hamburger animation
+    // Toggle menu and overlay
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       hamburger.classList.toggle('active');
+      document.body.classList.toggle('nav-open');
     });
-
-    // Close menu on link click (for mobile)
+  
+    // Close menu on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         hamburger.classList.remove('active');
+        document.body.classList.remove('nav-open');
+      });
     });
-
-});
+  
+    // Also close when clicking on overlay
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.classList.remove('nav-open');
+    });
   </script>
+  
+  
+
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <!-- skills -->
