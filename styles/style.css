@@ -201,6 +201,7 @@ ul li {
 .hero-text {
     flex: 1;
     min-width: 280px;
+    text-align: center;
 }
 
 .hero-text h2 {
@@ -349,36 +350,38 @@ ul li {
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
 }
 
 /* Social Icons Section */
 .about-icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
+    flex-direction: column;
 }
 
 .icon-circle {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 2px solid #555;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #555;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .icon-circle:hover {
-    background-color: #eee;
-    transform: scale(1.1);
+    background-color: #f0f8ff;
+    transform: scale(1.15);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4);
 }
 
 /* Responsive (Mobile) */
@@ -390,8 +393,11 @@ ul li {
 
     .about-icons {
         flex-direction: row;
-        margin-top: 2rem;
-        gap: 1rem;
+        gap: 2rem;
+    }
+
+    .icon-circle {
+        margin-bottom: 0;
     }
 }
 
