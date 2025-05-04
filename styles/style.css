@@ -699,29 +699,31 @@ ul li {
 
 .timeline {
     position: relative;
-    margin-left: 1.5rem;
-    padding-left: 2rem;
-    border-left: 3px solid #007bff;
+    margin-left: 40px;
+    border-left: 2px solid #d0d7de;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .timeline-icon {
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    left: -17px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
     border-radius: 50%;
-    background-color: #e0f0ff;
-    /* Light background for contrast */
-    color: #007bff;
-    /* Blue icon */
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #007bff;
     font-size: 16px;
-    border: 2px solid #4a90e2;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+    z-index: 1;
 }
 
 .timeline-content {
@@ -752,12 +754,11 @@ ul li {
 
 @media (max-width: 768px) {
     .timeline {
-        margin-left: 0.5rem;
-        padding-left: 1rem;
+        margin-left: 1.5rem;
     }
 
     .timeline-icon {
-        left: -20px;
+        left: -16px;
     }
 }
 
